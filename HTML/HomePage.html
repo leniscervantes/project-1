@@ -8,29 +8,35 @@
     <title>Circle | Home</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="../CSS/styles.css">
 </head>
 
 <body>
     <nav>
         <img src="../assets/logos/circle.svg" alt="Logo">
         <ul>
-            <li><a href="#">Home</a></li>
+            <li><a class="first" href="#">Home</a></li>
             <li><a href="#">Projects</a></li>
             <li><a href="#">Services</a></li>
         </ul>
-        <a href="#">Contact Us</a>
+        <a class="blue-btn" href="#">Contact Us</a>
     </nav>
 
     <section class="hero">
-        <div class="content">
-            <h1>Empower your bussines with stunning dessign!</h1>
+        <div class="text-content">
+            <h1>Empower Your Bussines With Stunning Dessign!</h1>
             <p>Circle is a digital design and development studio. We design and develop astonishing websites and mobile
                 apps.</p>
-            <a href="#">Get in touch</a><a href="#">See our work</a>
+            <div class="hero-links">
+                <a class="blue-btn" href="#">Get in touch</a>
+                <a class="normal-btn" href="#">See our work</a>
+            </div>
         </div>
-        <img src="../assets/hero-section/hero-image.png" alt="Hero">
-        <img src="../assets/hero-section/card-1.png" alt="Card 1">
-        <img src="../assets/hero-section/card-2.png" alt="Card 2">
+        <div class="hero-images">
+            <img class="hero-img" src="../assets/hero-section/hero-image.png" alt="Hero">
+            <img class="card1-img" src="../assets/hero-section/card-1.png" alt="Card 1">
+            <img class="card2-img" src="../assets/hero-section/card-2.png" alt="Card 2">
+        </div>
     </section>
 
     <section class="client">
@@ -44,70 +50,87 @@
     <section class="other-projects">
         <h3>Recent Projects</h3>
         <div class="cards">
-            <div class="card" style="width: 18rem;">
-                <img src="..." class="card-img-top" alt="Icon">
+            <div class="card">
+                <img src=" https://github.com/ironhack-jc/mid-term-api/blob/main/1.jpg?raw=true" class="card-img-top"
+                    alt="Icon">
                 <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        card's content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                    <h5 class="card-title">Simplify</h5>
+                    <p class="card-text">Some quick example text.</p>
+                    <a href="#">Learn more</a>
                 </div>
             </div>
-            <div class="card" style="width: 18rem;">
+            <div class="card">
                 <img src="..." class="card-img-top" alt="Icon">
                 <div class="card-body">
                     <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        card's content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                    <p class="card-text"></p>
+                    <a href="#">Learn more</a>
                 </div>
             </div>
-            <div class="card" style="width: 18rem;">
+            <div class="card">
                 <img src="..." class="card-img-top" alt="Icon">
                 <div class="card-body">
                     <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        card's content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                    <p class="card-text"></p>
+                    <a href="#">Learn more</a>
                 </div>
             </div>
         </div>
     </section>
 
     <section class="testimonial">
-        <!-- Display a grid here and place the images correctly -->
-        <h3>Hear What Our Clients Have to Say</h3>
-        <p>“Circle helped us through every stage of our startup. We really enjoyed working with you.”</p>
+        <img src="../assets/testimonial-section/memoji-1.png" alt="">
+        <h3 class="grid-centered">Hear What Our Clients Have to Say</h3>
+        <img src="../assets/testimonial-section/memoji-2.png" alt="">
+        <div></div>
+        <p class="grid-centered">“Circle helped us through every stage of our startup. We really enjoyed working with
+            you.”</p>
+        <div></div>
+        <img src="../assets/testimonial-section/memoji-3.png" alt="">
+        <div class="grid-centered user">
+            <img src="../assets/testimonial-section/profile.png" alt="">
+            <div class="grid-profile-text">
+                <p>Kristin Watson</p>
+                <a href="https://booking.com">Booking.com</a>
+            </div>
+        </div>
+        <img src="../assets/testimonial-section/memoji-4.png" alt="">
     </section>
 
     <section class="services">
         <h3>Our Services</h3>
         <div class="cards">
-            <div class="card" style="width: 18rem;">
-                <img src="../assets/services-section/icons/1.svg" class="card-img-top" alt="Icon">
+            <div class="card card-2">
+                <div class="icon">
+                    <img src="../assets/services-section/icons/1.svg" class="card-img-top" alt="Icon">
+                </div>
                 <div class="card-body">
                     <h5 class="card-title">User Interface Design</h5>
                     <p class="card-text">Circle provides you with a stunning user interface design that is accessible to
                         everyone.</p>
-                    <a href="#" class="btn btn-primary">Learn more</a>
+                    <a href="#">Learn more</a>
                 </div>
             </div>
-            <div class="card" style="width: 18rem;">
-                <img src="../assets/services-section/icons/2.svg" class="card-img-top" alt="Icon">
+            <div class="card card-2">
+                <div class="icon">
+                    <img src="../assets/services-section/icons/2.svg" class="card-img-top" alt="Icon">
+                </div>
                 <div class="card-body">
                     <h5 class="card-title">User Experience Design</h5>
                     <p class="card-text">Circle always focuses on delivering the best user experience to your customers.
                     </p>
-                    <a href="#" class="btn btn-primary">Learn more</a>
+                    <a href="#">Learn more</a>
                 </div>
             </div>
-            <div class="card" style="width: 18rem;">
-                <img src="../assets/services-section/icons/3.svg" class="card-img-top" alt="Icon">
+            <div class="card card-2">
+                <div class="icon">
+                    <img src="../assets/services-section/icons/3.svg" class="card-img-top" alt="Icon">
+                </div>
                 <div class="card-body">
                     <h5 class="card-title">Application Development</h5>
                     <p class="card-text">We develop high-quality mobile and web applications using the latest technology
                         stack.</p>
-                    <a href="#" class="btn btn-primary">Learn more</a>
+                    <a href="#">Learn more</a>
                 </div>
             </div>
         </div>
