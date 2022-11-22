@@ -256,6 +256,10 @@ section.cta {
     width: 35%;
 }
 
+.cta-email-input:focus {
+    outline: none;
+}
+
 .cta-email-btn {
     width: 15vw;
 }
