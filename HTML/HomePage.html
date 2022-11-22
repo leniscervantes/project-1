@@ -15,11 +15,11 @@
     <nav>
         <img src="../assets/logos/circle.svg" alt="Logo">
         <ul class="navbar-ul">
-            <li><a class="first" href="#">Home</a></li>
-            <li><a href="#">Projects</a></li>
-            <li><a href="#">Services</a></li>
+            <li><a class="first" href="../HTML/HomePage.html">Home</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#services">Services</a></li>
         </ul>
-        <a class="blue-btn" href="#">Contact Us</a>
+        <a class="blue-btn" href="../HTML/contactPage.html">Contact Us</a>
     </nav>
 
     <section class="hero">
@@ -47,32 +47,31 @@
         <img src="../assets/logos/amazon-logo.svg" alt="Amazon logo">
     </section>
 
-    <section class="other-projects">
+    <section id="projects" class="other-projects">
         <h3>Recent Projects</h3>
         <div class="cards">
             <div class="card">
-                <img src=" https://github.com/ironhack-jc/mid-term-api/blob/main/1.jpg?raw=true" class="card-img-top"
-                    alt="Icon">
+                <img id="card1-img" src="" id="pr1" class="card-img-top" alt="Icon">
                 <div class="card-body">
-                    <h5 class="card-title">Simplify</h5>
-                    <p class="card-text">Some quick example text.</p>
-                    <a href="#">Learn more</a>
+                    <h5 id="card1-name" class="card-title">example text</h5>
+                    <p id="card1-description" class="card-text">Some quick example text.</p>
+                    <a id="a-pr1" href="../HTML/projectPage.html">Learn more</a>
                 </div>
             </div>
             <div class="card">
-                <img src="..." class="card-img-top" alt="Icon">
+                <img id="card2-img" src="" id="pr2" class="card-img-top" alt="Icon">
                 <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text"></p>
-                    <a href="#">Learn more</a>
+                    <h5 id="card2-name" class="card-title">example text</h5>
+                    <p id="card2-description" class="card-text">Some quick example text.</p>
+                    <a id="a-pr2" href="../HTML/projectPage.html">Learn more</a>
                 </div>
             </div>
             <div class="card">
-                <img src="..." class="card-img-top" alt="Icon">
+                <img id="card3-img" src="" id="pr3" class="card-img-top" alt="Icon">
                 <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text"></p>
-                    <a href="#">Learn more</a>
+                    <h5 id="card3-name" class="card-title">example text</h5>
+                    <p id="card3-description" class="card-text">Some quick example text.</p>
+                    <a id="a-pr3" href="../HTML/projectPage.html">Learn more</a>
                 </div>
             </div>
         </div>
@@ -97,7 +96,7 @@
         <img src="../assets/testimonial-section/memoji-4.png" alt="">
     </section>
 
-    <section class="services">
+    <section id="services" class="services">
         <h3>Our Services</h3>
         <div class="cards">
             <div class="card card-2">
@@ -163,6 +162,7 @@
             </ul>
         </div>
     </footer>
+    <script src="../JS/index.js"></script>
 </body>
 
 </html>

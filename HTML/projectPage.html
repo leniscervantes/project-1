@@ -15,65 +15,42 @@
     <nav>
         <img src="../assets/logos/circle.svg" alt="Logo">
         <ul class="navbar-ul">
-            <li><a class="first" href="#">Home</a></li>
-            <li><a href="#">Projects</a></li>
-            <li><a href="#">Services</a></li>
+            <li><a class="first" href="../HTML/HomePage.html">Home</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="../HTML/HomePage.html">Services</a></li>
         </ul>
         <a class="blue-btn" href="#">Contact Us</a>
     </nav>
 
-    <section class="project">
-        <h1 class="prject-title">Simplify</h1>
-        <div>
-            <p class="project-description grey-color">Some quick example text. </p>
-            <p><strong>Completed on </strong><span class="completed-on grey-color">day month year</span></p>
-        </div>
-        <img src="https://github.com/ironhack-jc/mid-term-api/blob/main/1.jpg?raw=true" class="card-img-top"
-            alt="Project image">
-        <p class="project-content grey-color">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium dolor
-            earum ullam eius? Pariatur aut magni error exercitationem rerum ipsum porro minima rem praesentium
-            consectetur
-            dignissimos, cumque explicabo, voluptatum modi.
-            Esse quibusdam iusto dicta. Illo, non alias. Pariatur et ducimus non dolores sapiente harum id ratione quia
-            mollitia totam quisquam esse soluta facilis, a voluptatem laborum laboriosam eum expedita quo?
-            Commodi excepturi obcaecati velit autem voluptate culpa fuga qui perferendis. Recusandae dicta perferendis
-            architecto, optio dolor rem dolorem nisi. Rem cumque possimus deleniti aliquam quam voluptatibus ex quasi
-            exercitationem beatae.
-            Quasi provident ipsum rem ullam quidem doloremque reprehenderit voluptas, nihil veniam magnam officia fuga
-            fugit debitis ipsa eius adipisci quaerat nemo. Molestias ab suscipit enim nesciunt perferendis accusantium
-            maxime itaque?
-            Quod pariatur, ipsum totam vel assumenda nostrum at corporis, labore laboriosam non error cum numquam.
-            Suscipit at eius dolorum voluptates eaque nam voluptatum vitae, ducimus laborum aliquid sunt repudiandae
-            natus.</p>
+    <section id="project" class="project">
+        <!-- This is for the spinner -> <span class="loader"></span> -->
+        <h1 id="loader">Loading Project</h1>
     </section>
 
     <section class="other-projects">
         <h3>Recent Projects</h3>
         <div class="cards">
             <div class="card">
-                <img src=" https://github.com/ironhack-jc/mid-term-api/blob/main/1.jpg?raw=true" class="card-img-top"
-                    alt="Icon">
+                <img id='card1-img' src="" class="card-img-top" alt="Icon">
                 <div class="card-body">
-                    <h5 class="card-title">Simplify</h5>
-                    <p class="card-text  grey-color">Some quick example text.</p>
+                    <h5 id="card1-name" class="card-title"></h5>
+                    <p id="card1-description" class="card-text grey-color"></p>
                     <a href="#">Learn more</a>
                 </div>
             </div>
             <div class="card">
-                <img src=" https://github.com/ironhack-jc/mid-term-api/blob/main/1.jpg?raw=true" class="card-img-top"
-                    alt="Icon">
+                <img id='card2-img' src="" class="card-img-top" alt="Icon">
                 <div class="card-body">
-                    <h5 class="card-title">Simplify</h5>
-                    <p class="card-text  grey-color">Some quick example text.</p>
+                    <h5 id="card2-name" class="card-title"></h5>
+                    <p id="card2-description" class="card-text grey-color"></p>
                     <a href="#">Learn more</a>
                 </div>
             </div>
             <div class="card">
-                <img src=" https://github.com/ironhack-jc/mid-term-api/blob/main/1.jpg?raw=true" class="card-img-top"
-                    alt="Icon">
+                <img id='card3-img' src="" class="card-img-top" alt="Icon">
                 <div class="card-body">
-                    <h5 class="card-title">Simplify</h5>
-                    <p class="card-text  grey-color">Some quick example text.</p>
+                    <h5 id="card3-name" class="card-title"></h5>
+                    <p id="card3-description" class="card-text grey-color"></p>
                     <a href="#">Learn more</a>
                 </div>
             </div>
@@ -84,7 +61,6 @@
         <h3>Do you have any questions?</h3>
         <p>Let us help you!</p>
         <form action="post">
-            <!-- <img src="../assets/newsletter/icon/mail.svg" alt="email icon"> -->
             <input class="cta-email-input" type="email" placeholder='Enter your email'>
             <button class="blue-btn cta-email-btn" type="submit">Suscribe</button>
         </form>
@@ -106,6 +82,7 @@
             </ul>
         </div>
     </footer>
+    <script src="../JS/project.js"></script>
 </body>
 
 </html>
