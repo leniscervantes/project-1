@@ -14,7 +14,7 @@
 <body>
     <nav>
         <img src="../assets/logos/circle.svg" alt="Logo">
-        <ul>
+        <ul class="navbar-ul">
             <li><a class="first" href="#">Home</a></li>
             <li><a href="#">Projects</a></li>
             <li><a href="#">Services</a></li>
@@ -136,29 +136,32 @@
         </div>
     </section>
 
+    <!-- Fix the placeholder icon -->
     <section class="cta">
-        <!-- Fix the placeholder icon -->
         <h3>Do you have any questions?</h3>
         <p>Let us help you!</p>
         <form action="post">
-            <img src="../assets/newsletter/icon/mail.svg" alt="email icon">
-            <input type="email" placeholder='Enter your email'>
-            <button type="submit">Suscribe</button>
+            <!-- <img src="../assets/newsletter/icon/mail.svg" alt="email icon"> -->
+            <input class="cta-email-input" type="email" placeholder='Enter your email'>
+            <button class="blue-btn cta-email-btn" type="submit">Suscribe</button>
         </form>
     </section>
 
     <footer class="footer">
-        <!-- Display a grid here and place everything correctly -->
-        <img src="https://drive.google.com/file/d/16_b57q5C8quSC2RYqLtxLzHm-zpg3dYl/view?usp=share_link" alt="Logo">
-        <address>2972 Westheimer Rd. Santa Ana, Illinois 85486 </address>
-        <ul>
-            <li><a href="#">Team</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">Press</a></li>
-            <li><a href="#">Projects</a></li>
-            <li><a href="#">Privacy Policy</a></li>
-        </ul>
+        <div class="footer-flex">
+            <div class="footer-flex-el1 footer-center ">
+                <img class="logo" src="../assets/logos/circle.svg" alt="Logo">
+                <address>2972 Westheimer Rd. Santa Ana, Illinois 85486 </address>
+            </div>
+            <ul class="footer-flex-el2">
+                <li class="grid-centered grid-top"><a href="#">Team</a></li>
+                <li class="grid-centered grid-top"><a href="#">Services</a></li>
+                <li class="grid-centered grid-top"><a href="#">About Us</a></li>
+                <li class="grid-centered grid-bottom"><a href="#">Press</a></li>
+                <li class="grid-centered grid-bottom"><a href="#">Projects</a></li>
+                <li class="grid-centered grid-bottom"><a href="#">Privacy Policy</a></li>
+            </ul>
+        </div>
     </footer>
 </body>
 

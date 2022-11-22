@@ -22,14 +22,14 @@ nav {
     align-items: center;
 }
 
-ul {
+.navbar-ul {
     display: flex;
     justify-content: space-between;
     align-items: center;
     list-style-type: none;
 }
 
-ul>li {
+.navbar-ul>li {
     margin: 2vw;
 }
 
@@ -47,15 +47,24 @@ a {
 }
 
 .blue-btn {
+    font-size: 1.5vw;
     padding: 10px 25px;
     background-color: #072AC8;
     color: white;
+    border: none
+}
+
+.normal-btn {
+    margin-left: 3vw;
+    font-size: 1.5vw;
+    white-space: nowrap;
 }
 
 section.hero {
     margin-top: 3vw;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     align-items: center;
 }
 
@@ -76,9 +85,6 @@ section.hero {
     margin: 2vw 0vw;
 }
 
-.normal-btn {
-    margin-left: 3vw
-}
 
 .hero-img {
     width: 30vw;
@@ -220,4 +226,78 @@ section.testimonial {
 
 .grid-profile-text>a {
     color: white;
+}
+
+section.cta,
+.cta>* {
+    background-color: #FFC600;
+}
+
+section.cta {
+    height: 35vw;
+    margin: 10vw 3vw;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.cta>form {
+    margin-top: 4vw;
+}
+
+.cta>form>* {
+    height: 5.5vw;
+    margin: 1vw;
+    border: none;
+}
+
+.cta-email-input {
+    width: 35%;
+}
+
+.cta-email-btn {
+    width: 15vw;
+}
+
+.footer {
+    margin: 10vw 12vw;
+}
+
+.footer-flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-flex-el2 {
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 5vw);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+
+.footer-flex-el2>li>a,
+address {
+    color: #6B708D;
+    text-align: center;
+}
+
+.footer-center {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.logo {
+    width: 25%;
+}
+
+.grid-top {
+    align-self: flex-start;
+}
+
+.grid-bottom {
+    align-self: flex-end;
 }
