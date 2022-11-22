@@ -6,89 +6,105 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Circle | Project</title>
+    <link rel="stylesheet" href="../CSS/projectPage.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
 </head>
 
 <body>
     <nav>
-        <img src="https://drive.google.com/file/d/16_b57q5C8quSC2RYqLtxLzHm-zpg3dYl/view?usp=share_link" alt="Logo">
-        <ul>
-            <li><a href="#">Home</a></li>
+        <img src="../assets/logos/circle.svg" alt="Logo">
+        <ul class="navbar-ul">
+            <li><a class="first" href="#">Home</a></li>
             <li><a href="#">Projects</a></li>
             <li><a href="#">Services</a></li>
         </ul>
-        <a href="#">Contact Us</a>
+        <a class="blue-btn" href="#">Contact Us</a>
     </nav>
 
     <section class="project">
-        <h1 class="prject-title">Project Title</h1>
+        <h1 class="prject-title">Simplify</h1>
         <div>
-            <p class="project-description">Lorem ipsum dolor sit amet </p>
-            <p><strong>Completed on </strong><span class="completed-on">date</span></p>
+            <p class="project-description grey-color">Some quick example text. </p>
+            <p><strong>Completed on </strong><span class="completed-on grey-color">day month year</span></p>
         </div>
-        <div class="container">
-            <img src="#" alt="Project image">
-            <p class="project-content">consectetur adipisicing elit. Quod maxime doloremque accusantium. In blanditiis
-                excepturi officiis? Tempora illum officia porro dolores dignissimos nisi, exercitationem impedit earum
-                hic obcaecati, recusandae mollitia!</p>
-        </div>
+        <img src="https://github.com/ironhack-jc/mid-term-api/blob/main/1.jpg?raw=true" class="card-img-top"
+            alt="Project image">
+        <p class="project-content grey-color">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium dolor
+            earum ullam eius? Pariatur aut magni error exercitationem rerum ipsum porro minima rem praesentium
+            consectetur
+            dignissimos, cumque explicabo, voluptatum modi.
+            Esse quibusdam iusto dicta. Illo, non alias. Pariatur et ducimus non dolores sapiente harum id ratione quia
+            mollitia totam quisquam esse soluta facilis, a voluptatem laborum laboriosam eum expedita quo?
+            Commodi excepturi obcaecati velit autem voluptate culpa fuga qui perferendis. Recusandae dicta perferendis
+            architecto, optio dolor rem dolorem nisi. Rem cumque possimus deleniti aliquam quam voluptatibus ex quasi
+            exercitationem beatae.
+            Quasi provident ipsum rem ullam quidem doloremque reprehenderit voluptas, nihil veniam magnam officia fuga
+            fugit debitis ipsa eius adipisci quaerat nemo. Molestias ab suscipit enim nesciunt perferendis accusantium
+            maxime itaque?
+            Quod pariatur, ipsum totam vel assumenda nostrum at corporis, labore laboriosam non error cum numquam.
+            Suscipit at eius dolorum voluptates eaque nam voluptatum vitae, ducimus laborum aliquid sunt repudiandae
+            natus.</p>
     </section>
 
     <section class="other-projects">
         <h3>Recent Projects</h3>
         <div class="cards">
-            <div class="card" style="width: 18rem;">
-                <img src="..." class="card-img-top" alt="Icon">
+            <div class="card">
+                <img src=" https://github.com/ironhack-jc/mid-term-api/blob/main/1.jpg?raw=true" class="card-img-top"
+                    alt="Icon">
                 <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        card's content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                    <h5 class="card-title">Simplify</h5>
+                    <p class="card-text  grey-color">Some quick example text.</p>
+                    <a href="#">Learn more</a>
                 </div>
             </div>
-            <div class="card" style="width: 18rem;">
-                <img src="..." class="card-img-top" alt="Icon">
+            <div class="card">
+                <img src=" https://github.com/ironhack-jc/mid-term-api/blob/main/1.jpg?raw=true" class="card-img-top"
+                    alt="Icon">
                 <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        card's content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                    <h5 class="card-title">Simplify</h5>
+                    <p class="card-text  grey-color">Some quick example text.</p>
+                    <a href="#">Learn more</a>
                 </div>
             </div>
-            <div class="card" style="width: 18rem;">
-                <img src="..." class="card-img-top" alt="Icon">
+            <div class="card">
+                <img src=" https://github.com/ironhack-jc/mid-term-api/blob/main/1.jpg?raw=true" class="card-img-top"
+                    alt="Icon">
                 <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        card's content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                    <h5 class="card-title">Simplify</h5>
+                    <p class="card-text  grey-color">Some quick example text.</p>
+                    <a href="#">Learn more</a>
                 </div>
             </div>
         </div>
     </section>
 
     <section class="cta">
-        <!-- Fix the placeholder icon -->
         <h3>Do you have any questions?</h3>
         <p>Let us help you!</p>
         <form action="post">
-            <input type="email" placeholder='<img
-                src="https://drive.google.com/file/d/18Ys329Csn8jRw1sStIVEEa5GRhdzczuY/view" alt="email icon">'>
-            <button type="submit">Suscribe</button>
+            <!-- <img src="../assets/newsletter/icon/mail.svg" alt="email icon"> -->
+            <input class="cta-email-input" type="email" placeholder='Enter your email'>
+            <button class="blue-btn cta-email-btn" type="submit">Suscribe</button>
         </form>
     </section>
 
     <footer class="footer">
-        <!-- Display a grid here and place everything correctly -->
-        <img src="https://drive.google.com/file/d/16_b57q5C8quSC2RYqLtxLzHm-zpg3dYl/view?usp=share_link" alt="Logo">
-        <address>2972 Westheimer Rd. Santa Ana, Illinois 85486 </address>
-        <ul>
-            <li><a href="#" target="_blank">Team</a></li>
-            <li><a href="#" target="_blank">Services</a></li>
-            <li><a href="#" target="_blank">About Us</a></li>
-            <li><a href="#" target="_blank">Press</a></li>
-            <li><a href="#" target="_blank">Projects</a></li>
-            <li><a href="#" target="_blank">Privacy Policy</a></li>
-        </ul>
+        <div class="footer-flex">
+            <div class="footer-flex-el1 footer-center ">
+                <img class="logo" src="../assets/logos/circle.svg" alt="Logo">
+                <address>2972 Westheimer Rd. Santa Ana, Illinois 85486 </address>
+            </div>
+            <ul class="footer-flex-el2">
+                <li class="grid-centered grid-top"><a href="#">Team</a></li>
+                <li class="grid-centered grid-top"><a href="#">Services</a></li>
+                <li class="grid-centered grid-top"><a href="#">About Us</a></li>
+                <li class="grid-centered grid-bottom"><a href="#">Press</a></li>
+                <li class="grid-centered grid-bottom"><a href="#">Projects</a></li>
+                <li class="grid-centered grid-bottom"><a href="#">Privacy Policy</a></li>
+            </ul>
+        </div>
     </footer>
 </body>
 
