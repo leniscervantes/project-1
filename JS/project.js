@@ -1,5 +1,6 @@
 let intervalId;
-//Things for section 1
+let projectId;
+let mainPrj;
 const prSection = document.querySelector('#project');
 const prImg = document.querySelector('#pr-img');
 const prName = document.querySelector('#pr-name');
@@ -26,6 +27,31 @@ const moveLoader = () => {
     intervalId = setInterval(addDots, 1000);
 }
 
+const randomPrj = (arr) => {
+    const pr = arr[Math.floor(Math.random() * arr.length)];
+    return pr
+}
+
+const assignAllCards = (mainPrj) => {
+    let newArr = arrayOfPrjs.filter((pr) => pr !== mainPrj)
+    assignCard(card1Data, newArr[2]);
+
+    assignCard(card2Data, newArr[1]);
+
+    assignCard(card3Data, newArr[0]);
+
+}
+
+const setMainPrj = () => {
+    const QueryString = window.location.search;
+    const urlParams = new URLSearchParams(QueryString);
+    projectId = urlParams.get('prjId')
+    projectId ?
+        mainPrj = arrayOfPrjs.filter((pr) => pr.uuid === projectId)[0]
+        :
+        mainPrj = randomPrj(arrayOfPrjs)
+}
+
 window.onload = () => {
     moveLoader();
     fetch("https://raw.githubusercontent.com/ironhack-jc/mid-term-api/main/projects")
@@ -34,12 +60,10 @@ window.onload = () => {
         })
         .then((data) => {
             assignPrjs(data);
-            setProject(pr1);
+            setMainPrj();
+            setProject(mainPrj);
             clearInterval(intervalId);
-            assignCard(card1Data, pr2);
-            assignCard(card2Data, pr3);
-            assignCard(card3Data, pr4);
-            console.log('hey, everything loaded')
+            assignAllCards(mainPrj);
         })
         .catch((err) => console.log(err));
 };
