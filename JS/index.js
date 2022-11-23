@@ -19,7 +19,7 @@ let pr1 = {}
 let pr2 = {}
 let pr3 = {}
 let pr4 = {}
-
+let arrayOfPrjs = [];
 
 // const assignCard1 = ({ image, name, description }) => {
 //     pr1Img.setAttribute("src", image)
@@ -41,6 +41,7 @@ const assignPrjs = (data) => {
     pr3 = data[1];
     pr2 = data[2];
     pr1 = data[3];
+    arrayOfPrjs = [pr4, pr3, pr2, pr1]
 }
 
 const assignCard = (card, { image, name, description }) => {
