@@ -176,3 +176,8 @@ button {
     padding: 1.6vw;
     margin-top: 1vw;
 }
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
