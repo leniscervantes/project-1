@@ -1,4 +1,6 @@
 let intervalId;
+let projectId;
+let mainPrj;
 const prSection = document.querySelector('#project');
 const prImg = document.querySelector('#pr-img');
 const prName = document.querySelector('#pr-name');
@@ -42,14 +44,12 @@ const randomPrj = (arr) => {
     return pr
 }
 
-const assignAllCards = () => {
-    assignCard(card1Data, pr2);
-    assignCard(card2Data, pr3);
-    assignCard(card3Data, pr4);
+const assignAllCards = (mainPrj) => {
+    let newArr = arrayOfPrjs.filter((pr) => pr !== mainPrj)
+    assignCard(card1Data, newArr[2]);
+    assignCard(card2Data, newArr[1]);
+    assignCard(card3Data, newArr[0]);
 }
-
-let projectId;
-let mainPrj;
 
 const setMainPrj = () => {
     const QueryString = window.location.search;
@@ -72,7 +72,7 @@ window.onload = () => {
             setMainPrj();
             setProject(mainPrj);
             clearInterval(intervalId);
-            assignAllCards()
+            assignAllCards(mainPrj);
         })
         .catch((err) => console.log(err));
 };
