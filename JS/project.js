@@ -27,18 +27,6 @@ const moveLoader = () => {
     intervalId = setInterval(addDots, 1000);
 }
 
-// const assignPrjs = (data) => {
-//     pr4 = data[0];
-//     pr3 = data[1];
-//     pr2 = data[2];
-//     pr1 = data[3];
-//     arrayOfPrjs = [pr4, pr3, pr2, pr1]
-// }
-// const assignCard = (card, { image, name, description }) => {
-//     card.image.setAttribute('src', image)
-//     card.name.innerHTML = name
-//     card.description.innerHTML = description
-// }
 const randomPrj = (arr) => {
     const pr = arr[Math.floor(Math.random() * arr.length)];
     return pr
@@ -47,8 +35,11 @@ const randomPrj = (arr) => {
 const assignAllCards = (mainPrj) => {
     let newArr = arrayOfPrjs.filter((pr) => pr !== mainPrj)
     assignCard(card1Data, newArr[2]);
+
     assignCard(card2Data, newArr[1]);
+
     assignCard(card3Data, newArr[0]);
+
 }
 
 const setMainPrj = () => {

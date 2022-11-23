@@ -2,18 +2,21 @@
 let pr1Img = document.querySelector('#card1-img')
 let pr1Name = document.querySelector('#card1-name')
 let pr1Description = document.querySelector('#card1-description')
+let pr1anchor = document.querySelector('#a-pr1')
 
 let pr2Img = document.querySelector('#card2-img')
 let pr2Name = document.querySelector('#card2-name')
 let pr2Description = document.querySelector('#card2-description')
+let pr2anchor = document.querySelector('#a-pr2')
 
 let pr3Img = document.querySelector('#card3-img')
 let pr3Name = document.querySelector('#card3-name')
 let pr3Description = document.querySelector('#card3-description')
+let pr3anchor = document.querySelector('#a-pr3')
 
-let card1Data = { image: pr1Img, name: pr1Name, description: pr1Description }
-let card2Data = { image: pr2Img, name: pr2Name, description: pr2Description }
-let card3Data = { image: pr3Img, name: pr3Name, description: pr3Description }
+let card1Data = { image: pr1Img, name: pr1Name, description: pr1Description, anchor: pr1anchor }
+let card2Data = { image: pr2Img, name: pr2Name, description: pr2Description, anchor: pr2anchor }
+let card3Data = { image: pr3Img, name: pr3Name, description: pr3Description, anchor: pr3anchor }
 
 let pr1 = {}
 let pr2 = {}
@@ -21,21 +24,6 @@ let pr3 = {}
 let pr4 = {}
 let arrayOfPrjs = [];
 
-// const assignCard1 = ({ image, name, description }) => {
-//     pr1Img.setAttribute("src", image)
-//     pr1Name.innerHTML = name
-//     pr1Description.innerHTML = description
-// }
-// const assignCard2 = ({ image, name, description }) => {
-//     pr2Img.setAttribute('src', image)
-//     pr2Name.innerHTML = name
-//     pr2Description.innerHTML = description
-// }
-// const assignCard3 = ({ image, name, description }) => {
-//     pr3Img.setAttribute('src', image)
-//     pr3Name.innerHTML = name
-//     pr3Description.innerHTML = description
-// }
 const assignPrjs = (data) => {
     pr4 = data[0];
     pr3 = data[1];
@@ -44,10 +32,12 @@ const assignPrjs = (data) => {
     arrayOfPrjs = [pr4, pr3, pr2, pr1]
 }
 
-const assignCard = (card, { image, name, description }) => {
+const assignCard = (card, { image, name, description, uuid }) => {
     card.image.setAttribute('src', image)
     card.name.innerHTML = name
     card.description.innerHTML = description
+    let newAnc = `../HTML/projectPage.html?prjId=${uuid}`
+    card.anchor.setAttribute('href', newAnc)
 }
 
 window.onload = () => {
