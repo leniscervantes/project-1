@@ -160,7 +160,7 @@ section.cta {
 }
 
 .footer {
-    margin: 10vw 12vw;
+    margin: 10vw 12vw 3vw;
 }
 
 .footer-flex {
@@ -169,6 +169,7 @@ section.cta {
 }
 
 .footer-flex-el2 {
+    margin: 0;
     list-style-type: none;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -177,15 +178,21 @@ section.cta {
     grid-row-gap: 0px;
 }
 
+.footer-flex-el2>li {
+    align-self: center;
+}
+
 .footer-flex-el2>li>a,
 address {
     color: #6B708D;
     text-align: center;
+    font-size: 1vw;
+    margin: 0;
 }
 
 .footer-center {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-direction: column;
 }
 

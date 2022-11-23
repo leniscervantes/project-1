@@ -72,7 +72,7 @@ a {
 }
 
 .footer {
-    margin: 10vw 12vw;
+    margin: 10vw 12vw 3vw;
 }
 
 .footer-flex {
@@ -81,6 +81,7 @@ a {
 }
 
 .footer-flex-el2 {
+    margin: 0;
     list-style-type: none;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -89,15 +90,20 @@ a {
     grid-row-gap: 0px;
 }
 
+.footer-flex-el2>li {
+    align-self: center;
+}
+
 .footer-flex-el2>li>a,
 address {
     color: #6B708D;
     text-align: center;
+    font-size: 1vw;
 }
 
 .footer-center {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-direction: column;
 }
 
@@ -111,4 +117,62 @@ address {
 
 .grid-bottom {
     align-self: flex-end;
+}
+
+/* Form CSS */
+
+.small-flex {
+    display: flex;
+    flex-direction: column;
+}
+
+.big-flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.shared-line {
+    width: 48%;
+}
+
+form>div {
+    margin: 1vw 0;
+}
+
+label {
+    margin: 1vw 0;
+    width: fit-content;
+}
+
+input,
+textarea {
+    padding: 1.3vw;
+    background-color: rgba(107, 112, 141, 0.1);
+    border: none;
+    color: #6B708D;
+}
+
+input:focus,
+textarea:focus {
+    outline: none;
+    border: none;
+    background-color: lightblue
+}
+
+textarea {
+    resize: none;
+}
+
+::placeholder {
+    color: #6B708D;
+    font-family: Roboto;
+}
+
+button {
+    width: 100%;
+    background-color: #072AC8;
+    color: #FFF;
+    border: none;
+    padding: 1.6vw;
+    margin-top: 1vw;
 }
