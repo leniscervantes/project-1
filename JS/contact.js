@@ -69,6 +69,10 @@ const validateMessage = (msg) => {
     }
 }
 
+const changeRef = () => {
+    location.href = "../HTML/index.html"
+}
+
 const validateForm = (event) => {
     event.preventDefault()
     isValid = validateName(inputName) ?
@@ -80,9 +84,11 @@ const validateForm = (event) => {
                 : false
             : false
         : false
-    if (isValid) location.href = "../HTML/index.html"
+    if (isValid) {
+        setTimeout(changeRef, 4000)
+        alert('Thanks for your time! You will now be redirected to the homepage')
+    }
 }
-
 
 window.onload = () => {
     form.addEventListener('submit', validateForm)
