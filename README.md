@@ -37,10 +37,16 @@ HTML, CSS and Vanilla JavaScript
 
 
 Home-Page wireframe : 
+
+
 ![alt text](./assets/home-wireframe.png)
 Project-Page wireframe : 
+
+
 ![alt text](./assets/prj-wireframe.png)
 Contact-Page wireframe : 
+
+
 ![alt text](./assets/contact-wireframe.png)
 
 ## Link
