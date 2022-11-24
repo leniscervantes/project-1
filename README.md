@@ -1,6 +1,15 @@
 # Circle
 
-## Application’s features: 
+
+## Description
+
+Circle is a simple web made based on a figma design. It has 3 principal pages which are the homepage, projects page and a contact page.
+
+## Technologies
+
+HTML, CSS and Vanilla JavaScript
+
+## Components/features: 
 
    - Components common to all pages:
        * Navbar: containing the logo and some links to the other pages 
@@ -24,8 +33,19 @@
    The form has as method POST, wich would take you to an error page. To prevent that from happening I used method .preventDefault() and after the validation the user is redirected to the Home page
 
 
+## WIREFRAMES
 
 
+Home-Page wireframe : 
+![alt text](./assets/home-wireframe.png)
+Project-Page wireframe : 
+![alt text](./assets/prj-wireframe.png)
+Contact-Page wireframe : 
+![alt text](./assets/contact-wireframe.png)
 
+## Link
 
+This project has been deployed and you can find it
+[here](https://637fc12b42eb3c000997edf0--timely-praline-894034.netlify.app/html/)
 
+Made by leniscervantes
