@@ -80,7 +80,7 @@ const validateForm = (event) => {
                 : false
             : false
         : false
-    if (isValid) location.href = "../HTML/HomePage.html"
+    if (isValid) location.href = "../HTML/index.html"
 }
 
 
