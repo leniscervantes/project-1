@@ -278,6 +278,10 @@ section.cta {
 
 .cta-email-input {
     width: 35%;
+    background-image: url('../assets/newsletter/icon/mail.svg');
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+    padding-left: 5%;
 }
 
 .cta-email-input:focus {
@@ -308,13 +312,14 @@ section.cta {
 }
 
 .footer-flex-el2>li {
+    width: fit-content;
     align-self: center;
 }
 
 .footer-flex-el2>li>a,
 address {
     color: #6B708D;
-    text-align: center;
+    text-align: start;
     font-size: 1vw;
     margin: 0;
 }
@@ -357,7 +362,7 @@ address {
     }
 
     .client>a>img {
-        width: 40px;
+        width: 35px;
     }
 
     .card {
@@ -369,7 +374,7 @@ address {
 @media (min-width: 1250px) {
 
     body {
-        padding: 50px 200px;
+        padding: 50px 200px 0px;
     }
 
     section {
@@ -409,7 +414,8 @@ address {
     }
 
     .card {
-        width: 300px;
+        width: 20vw;
+        max-width: 400px;
         margin-top: 5vw;
     }
 
@@ -419,5 +425,9 @@ address {
         padding: 1vw;
         background-color: #F2F4FC;
         border-radius: 50%;
+    }
+
+    .footer-flex-el2 {
+        margin-left: 20vw;
     }
 }
