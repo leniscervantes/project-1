@@ -20,8 +20,8 @@ const setProject = ({ name, description, content, image, completed_on }) => {
 
 const addDots = () => {
     const loading = document.querySelector('#loader');
-    if (loading.innerHTML === 'Loading Project...') loading.innerHTML = 'Loading Project';
-    else loading.innerHTML += '.';
+    if (loading.innerHTML === 'Loading Project . . .') loading.innerHTML = 'Loading Project';
+    else loading.innerHTML += ' .';
 }
 const moveLoader = () => {
     intervalId = setInterval(addDots, 1000);
