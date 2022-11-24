@@ -40,10 +40,14 @@ Home-Page wireframe :
 
 
 ![alt text](./assets/home-wireframe.png)
+
+
 Project-Page wireframe : 
 
 
 ![alt text](./assets/prj-wireframe.png)
+
+
 Contact-Page wireframe : 
 
 
