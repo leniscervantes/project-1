@@ -1,9 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
 
+
+
 html>* {
     font-family: Roboto;
     margin: 0px;
     background-color: #F2F4FC;
+}
+
+a,
+p {
+    font-size: 2vw;
 }
 
 section {
@@ -11,7 +18,12 @@ section {
 }
 
 h3 {
+    font-size: 3vw;
     margin-bottom: 20px;
+}
+
+h5 {
+    font-size: 2vw;
 }
 
 nav {
@@ -27,6 +39,7 @@ nav {
     justify-content: space-between;
     align-items: center;
     list-style-type: none;
+    margin: 0%;
 }
 
 .navbar-ul>li {
@@ -119,7 +132,8 @@ section.hero {
     flex-wrap: wrap;
 }
 
-.client>img {
+.client>a>img {
+    width: 80px;
     margin: 3vw 2vw;
     -webkit-filter: grayscale(100%);
     filter: grayscale(100%);
@@ -132,16 +146,15 @@ section.hero {
 }
 
 .card {
-    width: 270px;
-    height: 365px;
+    width: 20vw;
     border: 0px;
     border-radius: 0%;
-    margin: 20px 20px 20px 0px;
+    margin: 3vw 0vw;
     box-shadow: 0 4px 8px 12px rgba(0, 0, 0, 0.03), 0 6px 20px 25px rgba(0, 0, 0, 0.05);
 }
 
 .card-2 {
-    height: 300px;
+    height: fit-content;
 }
 
 .card-text {
@@ -159,14 +172,6 @@ section.hero {
     margin: 1vw 0vw;
 }
 
-.icon {
-    width: 45px;
-    margin: 1.5vw 0vw 0vw 1.5vw;
-    padding: 1vw;
-    background-color: #F2F4FC;
-    border-radius: 50%;
-}
-
 section.testimonial {
     height: 50vw;
     margin: 10vw 3vw;
@@ -176,6 +181,14 @@ section.testimonial {
     grid-template-rows: repeat(3, 1fr);
     grid-column-gap: 0px;
     grid-row-gap: 0px;
+}
+
+.icon {
+    width: 45px;
+    margin: 1.5vw 0vw 0vw 1.5vw;
+    padding: 1vw;
+    background-color: #F2F4FC;
+    border-radius: 50%;
 }
 
 .testimonial>h3 {
@@ -215,9 +228,20 @@ section.testimonial {
     margin: auto;
 }
 
+.user>img {
+    width: 6vw;
+}
+
+.grid-profile-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
 .grid-profile-text,
 .grid-profile-text>* {
     background-color: #292E47;
+    margin: 0%;
 }
 
 .grid-profile-text>p:first-child {
@@ -311,4 +335,10 @@ address {
 
 .grid-bottom {
     align-self: flex-end;
+}
+
+@media (max-width: 500px) {
+    .client>a>img {
+        width: 40px;
+    }
 }

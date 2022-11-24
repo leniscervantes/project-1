@@ -11,6 +11,20 @@ h1 {
     font-weight: 700;
 }
 
+a,
+p {
+    font-size: 2vw;
+}
+
+h3 {
+    font-size: 3vw;
+    margin-bottom: 20px;
+}
+
+h5 {
+    font-size: 2vw;
+}
+
 .grey-color {
     color: #6B708D;
 }
