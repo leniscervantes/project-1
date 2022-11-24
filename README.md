@@ -15,7 +15,8 @@
 
    - Project Page:
 
-   Displays a random proyect unless you choose a proyect to display. Also, show cards with other 3 proyects
+   Displays a random proyect unless you choose a proyect to display. Also, show cards with other 3 proyects.
+   In order to acomplish that, the script fetches the API and saves the received data. The program will then select a random project from the data (unless you have chosen it by clicking on the card´s links) and use DOM manipulation to display it on the first section. Until that is done there will appear a loader (that probably will not be seen because it is not much data so it will be fetched in an instant). The rest of the projects will be filtered with the condition of having a different uuid than the main project and will be displayed in the 3 cards    
 
    - Contact Page:
 
