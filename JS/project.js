@@ -35,11 +35,8 @@ const randomPrj = (arr) => {
 const assignAllCards = (mainPrj) => {
     let newArr = arrayOfPrjs.filter((pr) => pr !== mainPrj)
     assignCard(card1Data, newArr[2]);
-
     assignCard(card2Data, newArr[1]);
-
     assignCard(card3Data, newArr[0]);
-
 }
 
 const setMainPrj = () => {
