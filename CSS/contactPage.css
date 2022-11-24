@@ -124,6 +124,7 @@ address {
 .small-flex {
     display: flex;
     flex-direction: column;
+    justify-content: end;
 }
 
 .big-flex {
@@ -181,3 +182,17 @@ input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
     -webkit-appearance: none;
 }
+
+.phone-label {
+
+    margin-bottom: 1vw;
+}
+
+.err-msg {
+    color: rgb(214, 85, 85);
+    font-size: 1.5vw;
+}
+
+/* #phone:valid {
+    background-color: white;
+} */

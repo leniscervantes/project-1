@@ -4,6 +4,11 @@ const email = document.querySelector('#email')
 const phone = document.querySelector('#phone')
 const message = document.querySelector('#message')
 
+const errName = document.querySelector('#err-name')
+const errEmail = document.querySelector('#err-email')
+const errPhone = document.querySelector('#err-phone')
+const errMsg = document.querySelector('#err-message')
+
 let isValid;
 let inputMsg;
 let inputName;
@@ -12,37 +17,58 @@ let inputPhone;
 
 const txtAData = () => {
     inputMsg = message.value
-    console.log('This is message value', message.value)
 }
 const nameData = () => {
     inputName = name.value
-    console.log('This is name value', name.value)
 }
 const emailData = () => {
     inputEmail = email.value
-    console.log('This is mail value', email.value)
+
 }
 const phoneData = () => {
-    console.log(typeof phone.value)
     inputPhone = phone.value
-    console.log(typeof inputPhone)
-    console.log('This is phone value', phone.value)
 }
 
 const validateName = (name) => {
-    return name ? true : false
+    if (name.toLowerCase() === 'ironhack') {
+        errName.innerHTML = 'You can not be Ironhack, because I am Ironhack.'
+        name.value = ''
+        return false
+    }
+    else if (name.trim() === '') {
+        errName.innerHTML = 'You need to write a valid name'
+        name.value = 'Hola'
+        return false
+    }
+    else {
+        errName.innerHTML = ''
+        return true
+    }
 }
 const validateEmail = (mail) => {
-    return mail ? true : false
+    return true
 }
 const validatePhone = (phone) => {
-    return phone ? true : false
+    if (!(+phone > 10000000 && +phone < 1000000000)) {
+        errPhone.innerHTML = 'Please enter a valid phone number'
+        return false
+    }
+    else {
+        errPhone.innerHTML = ''
+        return true
+    }
 }
 const validateMessage = (msg) => {
-    return msg ? true : false
+    if (msg.trim() === '') {
+        errMsg.innerHTML = 'You didn´t write anything'
+        return false
+    }
+    else {
+        errName.innerHTML = ''
+        return true
+    }
 }
 
-// Change falses for dom manipulation
 const validateForm = (event) => {
     event.preventDefault()
     isValid = validateName(inputName) ?
@@ -54,38 +80,11 @@ const validateForm = (event) => {
                 : false
             : false
         : false
-    console.log('is valid?', isValid)
+    if (isValid) location.href = "../HTML/HomePage.html"
 }
 
 
 window.onload = () => {
     form.addEventListener('submit', validateForm)
-
 }
 
-
-//Check why this doesn´t work
-
-// const validateForm = () => {
-//     isValid = validateName(inputName) ?
-//         validateEmail(inputEmail) ?
-//             validatePhone(inputPhone) ?
-//                 validateMessage(inputMsg) ?
-//                     true
-//                     : false
-//                 : false
-//             : false
-//         : false
-//     console.log('is valid?', isValid)
-// }
-
-// const valid = (event) => {
-//     event.preventDefault()
-//     validateForm()
-//     if (isValid) console.log('do a redirect here')
-// }
-
-// window.onload = () => {
-//     form.addEventListener('submit', valid)
-
-// }

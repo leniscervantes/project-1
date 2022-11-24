@@ -25,28 +25,30 @@
         <form id="form1" action="/HTML/homePage.html" method="post" autocomplete="off">
             <div class="small-flex">
                 <label for="name">Full Name</label>
+                <span id="err-name" class="err-msg"></span>
                 <input onchange="nameData()" type="text" id="name" name="name" placeholder="Enter your full name"
-                    autofocus>
+                    autofocus required>
             </div>
 
             <div class=" big-flex">
                 <div class="small-flex shared-line">
-                    <label for="email">Email</label>
+                    <label for="email">Email</label> <span id="err-email" class="err-msg"></span>
                     <input onchange="emailData()" type="email" name="email" placeholder="Enter your email address"
-                        id="email">
+                        id="email" required>
                 </div>
 
                 <div class="small-flex shared-line">
-                    <label for="phone">Phone</label>
-                    <input onchange="phoneData()" type="number" name="phone" placeholder="Enter your phone number"
-                        id="phone">
+                    <div class="phone-label"><label for="phone">Phone</label> <span id="err-phone"
+                            class="err-msg"></span></div>
+                    <input onchange="phoneData()" type="number" name="phone" minlength="8" maxlength="10"
+                        placeholder="Enter your phone number" id="phone" required>
                 </div>
             </div>
 
             <div class="small-flex">
-                <label for="message">Message</label>
+                <label for="message">Message</label> <span id="err-message" class="err-msg"></span>
                 <textarea onchange="txtAData()" id="message" cols="30" rows="10" name="msg"
-                    placeholder="Enter your message here..." maxlength="1000"></textarea>
+                    placeholder="Enter your message here..." maxlength="1000" required></textarea>
             </div>
             <button type="submit">Submit</button>
         </form>
