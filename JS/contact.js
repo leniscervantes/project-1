@@ -54,7 +54,7 @@ const validateEmail = (mail) => {
         return true
     }
     else {
-        errEmail.innerHTML = 'Invalid format (must contain .com or .es)'
+        errEmail.innerHTML = 'Invalid format (must end with .com or .es)'
         return false
     }
 
