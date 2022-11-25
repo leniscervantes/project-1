@@ -14,6 +14,7 @@ let pr3Name = document.querySelector('#card3-name')
 let pr3Description = document.querySelector('#card3-description')
 let pr3anchor = document.querySelector('#a-pr3')
 
+//Organises all DOM elements 
 let card1Data = { image: pr1Img, name: pr1Name, description: pr1Description, anchor: pr1anchor }
 let card2Data = { image: pr2Img, name: pr2Name, description: pr2Description, anchor: pr2anchor }
 let card3Data = { image: pr3Img, name: pr3Name, description: pr3Description, anchor: pr3anchor }
@@ -24,6 +25,7 @@ let pr3 = {}
 let pr4 = {}
 let arrayOfPrjs = [];
 
+//Saves all data fetched
 const assignPrjs = (data) => {
     pr4 = data[0];
     pr3 = data[1];
@@ -32,6 +34,7 @@ const assignPrjs = (data) => {
     arrayOfPrjs = [pr4, pr3, pr2, pr1]
 }
 
+// It takes al DOM elements from a card (card) and a project (destructured)
 const assignCard = (card, { image, name, description, uuid }) => {
     card.image.setAttribute('src', image)
     card.name.innerHTML = name

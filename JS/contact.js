@@ -18,13 +18,15 @@ let inputPhone;
 const txtAData = () => {
     inputMsg = message.value
 }
+
 const nameData = () => {
     inputName = name.value
 }
+
 const emailData = () => {
     inputEmail = email.value
-
 }
+
 const phoneData = () => {
     inputPhone = phone.value
 }
@@ -45,9 +47,19 @@ const validateName = (name) => {
         return true
     }
 }
+
 const validateEmail = (mail) => {
-    return true
+    if (mail.includes('.com' || mail.includes('.es'))) {
+        errEmail.innerHTML = ''
+        return true
+    }
+    else {
+        errEmail.innerHTML = 'Invalid format (must contain .com or .es)'
+        return false
+    }
+
 }
+
 const validatePhone = (phone) => {
     if (!(+phone > 10000000 && +phone < 1000000000)) {
         errPhone.innerHTML = 'Please enter a valid phone number'
@@ -58,6 +70,8 @@ const validatePhone = (phone) => {
         return true
     }
 }
+
+
 const validateMessage = (msg) => {
     if (msg.trim() === '') {
         errMsg.innerHTML = 'You didn´t write anything'

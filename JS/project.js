@@ -8,16 +8,6 @@ const prDescription = document.querySelector('#pr-description');
 const prDateCompleted = document.querySelector('#pr-date');
 const prContent = document.querySelector('#pr-content');
 
-const setProject = ({ name, description, content, image, completed_on }) => {
-    prSection.innerHTML = `<h1 id="pr-name" class="project-title">${name}</h1>
-    <div class="prDiv">
-        <p id="pr-description" class="project-description grey-color">${description}</p>
-        <p><strong>Completed on </strong><span id="pr-date" class="completed-on grey-color">${completed_on}</span></p>
-    </div>
-    <img id="pr-img" src="${image}" class="card-img-top" alt="Project image">
-    <p id="pr-content" class="project-content grey-color">${content}</p>`;
-}
-
 const addDots = () => {
     const loading = document.querySelector('#loader');
     if (loading.innerHTML === 'Loading Project . . .') loading.innerHTML = 'Loading Project';
@@ -32,6 +22,7 @@ const randomPrj = (arr) => {
     return pr
 }
 
+//Function assign cards is in index.js. It takes al DOM elements from a card (cardData) and a project
 const assignAllCards = (mainPrj) => {
     let newArr = arrayOfPrjs.filter((pr) => pr !== mainPrj)
     assignCard(card1Data, newArr[2]);
@@ -39,6 +30,7 @@ const assignAllCards = (mainPrj) => {
     assignCard(card3Data, newArr[0]);
 }
 
+//Looks for an id on query params in the URL. If found sets mainPrj as the one with that id. If not sets it as a random project
 const setMainPrj = () => {
     const QueryString = window.location.search;
     const urlParams = new URLSearchParams(QueryString);
@@ -47,6 +39,16 @@ const setMainPrj = () => {
         mainPrj = arrayOfPrjs.filter((pr) => pr.uuid === projectId)[0]
         :
         mainPrj = randomPrj(arrayOfPrjs)
+}
+
+const setProject = ({ name, description, content, image, completed_on }) => {
+    prSection.innerHTML = `<h1 id="pr-name" class="project-title">${name}</h1>
+    <div class="prDiv">
+        <p id="pr-description" class="project-description grey-color">${description}</p>
+        <p><strong>Completed on </strong><span id="pr-date" class="completed-on grey-color">${completed_on}</span></p>
+    </div>
+    <img id="pr-img" src="${image}" class="card-img-top" alt="Project image">
+    <p id="pr-content" class="project-content grey-color">${content}</p>`;
 }
 
 window.onload = () => {
